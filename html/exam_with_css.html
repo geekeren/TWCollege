@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+
+        main {
+            font-family: "Microsoft YaHei";
+            margin: 0px auto;
+
+        }
+
+        @media screen and (min-width: 960px) {
+            main {
+                width: 900px;
+            }
+
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        header > section {
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        header > section > div {
+            width: 33%;
+            float: left;
+            display: inline;
+        }
+
+        section {
+            border: solid #e1e1e1 1px;
+            margin: 15px;
+            border-radius: 5px;
+
+        }
+
+        .questions_part > header {
+            background: #f5f5f5;
+        }
+
+        .questions_part > header > h2 {
+            font-size: 1.2em;
+            margin: 0px;
+            padding: 12px;
+        }
+
+        .questions_part > ol > li {
+            line-height: 28px;
+            padding-top: 5px;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 98%;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        input,textarea {
+            font-family: "Microsoft YaHei";
+            border: solid #e1e1e1 1px;
+            border-radius: 2px;
+        }
+
+        footer > input[type=submit] {
+            border: 1px solid transparent;
+            border-radius: 3px;
+            padding: 4px;
+            background: #428bca;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        span.judge_true:after {
+            font-weight: bold;
+            content: "√";
+            color: green;
+        }
+
+        span.judge_false:after {
+            font-weight: bold;
+            content: "×";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>统一建模语言理论测试</h1>
+        <section>
+            <div><span class="title">考试科目：</span><span>统一建模语言</span></div>
+            <div><span class="title">时间：</span><span>100分钟</span></div>
+            <div><span class="title">得分：</span><span></span></div>
+        </section>
+        <section>
+            <div><label for="class" class="title">班级（必填）：</label><input type="text" id="class"></div>
+            <div><label for="student_number" class="title">学号（必填）：</label><input type="text" id="student_number"></div>
+            <div><label for="student_name" class="title">姓名（必填）：</label><input type="text" id="student_name"></div>
+        </section>
+    </header>
+    <article>
+        <form>
+
+            <section class="questions_part">
+                <header class="title"><h2>一、填空题（每题5分，共20分）</h2></header>
+                <ol>
+                    <li>
+                        <article>
+                            <header class="title">UML的中文全称是：</header>
+
+                            <input type="text" id="question_1_1" name="question_1_1">
+                        </article>
+
+                    </li>
+                    <li>
+                        <article>
+                            <header class="title">对象最突出的特征是：</header>
+                            <input type="text" id="question_1_2_1" name="question_1_2">
+                            <input type="text" id="question_1_2_2" name="question_1_2">
+                            <input type="text" id="question_1_2_3" name="question_1_2">
+                        </article>
+                    </li>
+                </ol>
+            </section>
+            <section class="questions_part">
+                <header><h2>二、选择题（每题10分，共20分）</h2></header>
+                <ol>
+                    <li>
+                        <article>
+                            <header class="title">UML与软件工程的关系是：</header>
+                            <input type="radio" name="question_2_1" value="1"><label for="">(A)UML就是软件工程</label><br>
+                            <input type="radio" name="question_2_1" value="2"><label
+                                for="">(B)UML参与到软件工程中软件开发过程的几个阶段</label><br>
+                            <input type="radio" name="question_2_1" value="3"><label for="">(C)UML与软件工程无关</label><br>
+                            <input type="radio" name="question_2_1" value="4"><label for="">(D)UML是软件的一部分</label><br>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header class="title">Java语言支持：</header>
+                            <input type="radio" name="question_2_2" value="1"><label for="">(A)单继承</label><br>
+                            <input type="radio" name="question_2_2" value="2"><label for="">(B)多继承</label><br>
+                            <input type="radio" name="question_2_2" value="3"><label for="">(C)单继承和多继承都支持</label><br>
+                            <input type="radio" name="question_2_2" value="4"><label for="">(D)单继承和多继承都不支持</label>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+            <section class="questions_part">
+                <header><h2>三、多项选择题（每题10分，共20分）</h2></header>
+                <ol>
+                    <li>
+                        <article>
+                            <header class="title">用例的粒度分为哪几种：</header>
+                            <input type="checkbox" name="question_3_1" value="1"><label for="">(A)概述级</label><br><input
+                                type="checkbox" name="question_3_1" value="2"><label for="">(B)需求级</label><br><input
+                                type="checkbox" name="question_3_1" value="3"><label for="">(C)用户目标级</label><br><input
+                                type="checkbox" name="question_3_1" value="4"><label for="">(D)子功能级</label><br>
+                        </article>
+
+                    </li>
+                    <li>
+                        <article>
+                            <header class="title">类图由以下哪三部分组成：</header>
+                            <input type="checkbox" name="question_3_2" value="1"><label
+                                for="">(A)名称(Name)</label><br><input
+                                type="checkbox" name="question_3_2" value="2"><label
+                                for="">(B)属性(Attribute)</label><br><input
+                                type="checkbox" name="question_3_2" value="3"><label
+                                for="">(C)操作(Operation)</label><br><input
+                                type="checkbox" name="question_3_2" value="4"><label for="">(D)方法(Function)</label><br>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+            <section class="questions_part">
+                <header><h2>四、判断题（每题10分，共20分）</h2></header>
+                <ol>
+                    <li><span class="title">用例图只是用于和客户交流和沟通用的，用于确定需求。</span>
+                        <span>
+                            <input type="radio" name="question_4_1" value="0"><span class="judge_true"></span>
+                            <input type="radio" name="question_4_1" value="1"><span class="judge_false"></span>
+                        </span>
+                    </li>
+                    <li><span class="title">在状态图中，终止状态在一个状态图中允许有任意多个。</span>
+                        <span>
+                            <input type="radio" name="question_4_2" value="0"><span class="judge_true"></span>
+                            <input type="radio" name="question_4_2" value="1"><span class="judge_false"></span>
+                        </span>
+
+                </ol>
+            </section>
+            <section class="questions_part">
+                <header><h2>五、简答题（每题20分，共20分）</h2></header>
+                <ol>
+                    <li>
+                        <article>
+                            <header class="title">简述什么是模型以及模型的表现形式？</header>
+                            <textarea name="question_5_1" id="" cols="20" rows="5"></textarea>
+                        </article>
+
+                    </li>
+                </ol>
+            </section>
+
+            <footer>
+                <input type="submit" value="计算分数"/>
+            </footer>
+        </form>
+    </article>
+</main>
+
+
+</body>
+</html>
