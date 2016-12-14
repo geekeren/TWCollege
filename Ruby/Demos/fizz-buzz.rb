@@ -39,5 +39,5 @@ def fizz_buzz(n)
     return result
 
 end
-
-puts fizz_buzz(15)
+number = ARGV[0].to_i
+p fizz_buzz(number)
